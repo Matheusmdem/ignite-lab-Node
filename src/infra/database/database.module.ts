@@ -11,6 +11,9 @@ import { PrismaNotificationsRepository } from "./prisma/repositories/prisma-noti
       provide: NotificationRepository,
       useClass: PrismaNotificationsRepository
     }
+  ],
+  exports: [
+    NotificationRepository
   ]
 })
 
